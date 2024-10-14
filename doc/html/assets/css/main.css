@@ -1,0 +1,1100 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Customize the background color to match your design.
+   */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+   * A better looking default horizontal rule
+   */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+   * Remove default fieldset styles.
+   */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*
+   * Allow only vertical resizing of textareas.
+   */
+
+textarea {
+    resize: vertical;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #f8fafc;
+}
+
+/* color */
+:root {
+    --bg-primary: #ff5200;
+    --bg-black: #27272A;
+    --bg-white: #ffffff;
+    --bg-button: #ff5200;
+    --bg-button-hover: #e64c04;
+}
+
+.form-control {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* =============================  Header  ================================= */
+
+.header-section {
+    background: #fff;
+    border-bottom: 1px solid #EEE;
+}
+
+.header-section .navbar-nav .nav-link {
+    font-size: 15px;
+    color: var(--bg-black);
+    font-weight: 600;
+    padding: 22px 15px;
+    line-height: 40px;
+    margin: 0px 15px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+
+.header-section .navbar-nav .nav-link:hover {
+    border-bottom: 1px solid var(--bg-primary);
+    color: var(--bg-primary)
+}
+
+.login_btn {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--bg-black)
+}
+
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px;
+}
+
+.header-section .offcanvas-body {
+    padding: 0px 24px;
+}
+
+/* =============================  Banner  ================================= */
+.banner-section {
+    background: linear-gradient(to top, #3f51b599, #ff520087);
+}
+
+.banner-content h2 {
+    font-weight: bold;
+    color: var(--bg-black);
+    font-size: 28px;
+}
+
+.banner-content span {
+    color: var(--bg-primary);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.delivery_calculate {
+    border: 1px dashed #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: #ffffff54;
+}
+
+.delivery_calculate h4 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 11px;
+}
+
+.delivery_calculate p {
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+}
+
+.delivery_calculate .form-label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.delivery_calculate .form-control {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    font-size: 15px;
+    color: #BBB;
+}
+
+.delivery_calculate .form-control option {
+    color: var(--bg-black);
+}
+
+.delivery_calculate .form-control:focus {
+    border-color: var(--bg-primary);
+}
+
+.delivery_calculate .btn-primary {
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 13px 52px;
+    background: var(--bg-black);
+    color: var(--bg-white);
+}
+
+.delivery_calculate .btn-primary:hover {
+    background: var(--bg-button-hover);
+}
+
+
+/* =============================  Features  ================================= */
+
+.section-heading h4 {
+    font-size: 27px;
+    font-weight: 800;
+    color: var(--bg-black);
+}
+
+.section-heading h4 span {
+    color: var(--bg-primary);
+}
+
+.service-wrapper {
+    border-radius: 3px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.service-wrap {
+    padding: 40px 20px;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb !important;
+}
+
+.service-content {
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+}
+
+.service-wrap:hover .service-content {
+    transform: scale(1.05);
+}
+
+.service-wrap .icon {
+    font-size: 45px;
+    color: var(--bg-primary);
+    margin-bottom: 15px;
+}
+
+.service-wrap h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bg-black);
+}
+
+.service-wrap p {
+    font-size: 15px;
+    color: #666;
+    margin: 0;
+    line-height: 24px;
+}
+
+
+:root {
+    --bg-primary: #ff5200;
+}
+
+.delivery-process .main-timeline .timeline:nth-child(2) {
+    --bg-primary: #8E45B6;
+}
+
+.delivery-process .main-timeline .timeline:nth-child(3) {
+    --bg-primary: var(--bg-black);
+}
+
+.delivery-process .main-timeline .timeline:nth-child(4) {
+    --bg-primary: #3b99f1;
+}
+
+
+.delivery-process .main-timeline {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-timeline:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.delivery-process .main-timeline .timeline {
+    width: 50%;
+    padding: 80px 0 0 0;
+    margin: 0 5px 25px 0;
+    float: left;
+}
+
+.delivery-process .main-timeline .timeline-content {
+    min-height: 100px;
+    padding: 0 15px 0 0;
+    border-right: 2px solid var(--bg-primary);
+    display: block;
+    position: relative;
+}
+
+.delivery-process .main-timeline .timeline-content:hover {
+    text-decoration: none;
+}
+
+.delivery-process .main-timeline .timeline-content:before,
+.delivery-process .main-timeline .timeline-content:after {
+    content: '';
+    background-color: var(--bg-primary);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top: 0;
+}
+
+.delivery-process .main-timeline .timeline-content:after {
+    top: auto;
+    bottom: 0;
+}
+
+.delivery-process .main-timeline .timeline-icon {
+    color: #fff;
+    background-color: var(--bg-primary);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5px 20px;
+    position: absolute;
+    right: -2px;
+    top: -60px;
+    z-index: 1;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
+    border-radius: 6px;
+}
+
+.delivery-process .main-timeline .title {
+    color: var(--bg-black);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.delivery-process .main-timeline .description {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.delivery-process .main-timeline .timeline:nth-child(even) {
+    margin: 0 0 25px 5px;
+    float: right;
+}
+
+.delivery-process .main-timeline .timeline:nth-child(even) .timeline-content {
+    text-align: left;
+    padding: 0 0 0 15px;
+    border-left: 2px solid var(--bg-primary);
+    border-right: none;
+}
+
+.delivery-process .main-timeline .timeline:nth-child(even) .timeline-content:before,
+.delivery-process .main-timeline .timeline:nth-child(even) .timeline-content:after {
+    right: auto;
+    left: -4px;
+}
+
+.delivery-process .main-timeline .timeline:nth-child(even) .timeline-icon {
+    right: auto;
+    left: -2px;
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+}
+
+/* =============================  footer section  ================================= */
+
+.footer-section {
+    background: var(--bg-black);
+}
+
+.footer-widget h3 {
+    color: #CCC;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact_info .icon i {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.address {
+    font-size: 14px;
+    color: #BBB;
+}
+
+.links ul li a {
+    color: #DDD;
+    display: inline-block;
+    padding: 8px 0px;
+    transition: all 0.3s ease;
+    font-size: 13px;
+}
+
+.links ul li a:hover {
+    color: var(--bg-primary);
+}
+
+
+.social_media ul li {
+    display: inline-block;
+}
+
+.social_media ul li a {
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #2d2d2d;
+    width: 38px;
+    display: inline-block;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 50px;
+    margin: 0px 10px 10px 0px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.social_media ul li a:hover {
+    background: #2d2d2d;
+}
+
+.social_media ul li:last-child a {
+    margin-right: 0;
+}
+
+.copyright p {
+    font-size: 14px;
+    color: #BBB;
+    border-top: 1px solid #333;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.breadcrumb_sec h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bg-black);
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.breadcrumb_sec p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* =============================  Product Tracking  ================================= */
+.product-tracking {
+    position: relative;
+}
+
+.tracking-bg {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: .5;
+}
+
+.tracking-form {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.tracking-form .form-control {
+    height: 50px;
+    border: 1px solid #dddd;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary {
+    font-weight: 500;
+    background: var(--bg-button);
+    border: none !important;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: var(--bg-white) !important;
+    background-color: var(--bg-button) !important;
+    border-color: var(--bg-button) !important;
+}
+
+.btn-primary:hover {
+    background: var(--bg-button-hover);
+}
+
+
+.tracking-pro-content p {
+    font-size: 13px;
+    color: var(--bg-black);
+    font-weight: 700;
+    margin: 0;
+    border-bottom: 1px solid #f0eeee;
+    padding: 15px 0px;
+}
+
+
+/* =============================  Contact  ================================= */
+
+.contact-section .contact_info {
+    border: 1px dashed #ffffff;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 180px;
+    background: var(--bg-black);
+}
+
+.contact-section .contact_info .icon i {
+    font-size: 55px;
+    color: var(--bg-primary);
+}
+
+.contact-section .contact_info .icon {
+    margin-bottom: 15px;
+}
+
+.contact-section .contact_info .address {
+    font-size: 14px;
+    color: var(--bg-white);
+    font-weight: 500;
+}
+
+.contact-section .contact_info .address p {
+    margin: 0;
+}
+
+.contact-form .form-control {
+    min-height: calc(1.5em + 1.625rem);
+    display: block;
+    width: 100%;
+    padding: 0.6125rem 1rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #9ca8ea17 !important;
+    background-clip: padding-box;
+    border: 0.0625rem solid rgba(231, 234, 243, .7) !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.3125rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.contact-form .btn-primary {
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--bg-button);
+    border: none !important;
+    padding: 12px 50px;
+    border-radius: 4px;
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--bg-black);
+}
+
+.contact-form {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+}
+
+/* =============================  Login  ================================= */
+/* .login-section {
+    background-image: url('../images/login-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 580px;
+} */
+
+.login-section .card {
+    box-shadow: 0 0.375rem 0.75rem rgba(140, 152, 164, .075);
+}
+
+.login-section .social-auth {
+    background-color: #fff;
+    border: 0.0625rem solid rgba(231, 234, 243, .7);
+    font-size: 15px;
+    font-weight: 500;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.login-section .social-auth span {
+    display: inline-block;
+    height: 40px;
+}
+
+.login-form.card-body {
+    border: 1px solid #EEE;
+    border-radius: 10px;
+}
+
+.login-section .divider-center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #8c98a4;
+}
+
+.login-section .divider-center::after,
+.login-section .divider-center::before {
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    border-top: .0625rem solid rgba(231, 234, 243, .7);
+    margin-top: .0625rem;
+    content: ""
+}
+
+.login-section .divider-center::before {
+    margin-right: 1.5rem
+}
+
+.login-section .divider-center::after {
+    margin-left: 1.5rem
+}
+
+.login-form .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-black);
+}
+
+.login-form .form-label a {
+    color: var(--bg-primary);
+}
+
+.login-section .form-control {
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 0.6125rem 1rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1e2022;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0.0625rem solid rgb(231 234 243);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.3125rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.login-section .form-control::placeholder {
+    color: #CCC;
+}
+
+.avatar-xss,
+.avatar-xss .avatar-initials {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.login-form .heading .title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.login-form p {
+    font-size: 14px;
+}
+
+.login-form p a {
+    color: var(--bg-primary);
+    font-weight: bold;
+}
+
+.login-form .form-check-label {
+    cursor: pointer;
+}
+
+.login-form .form-check .form-check-input {
+    padding: 0;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.login-form .form-check .form-check-input {
+    padding: 0;
+    margin-top: 1px;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #DDD;
+    border-radius: 50px;
+}
+
+.login-form .form-check-input:checked {
+    background-color: var(--bg-primary) !important;
+    border-color: var(--bg-primary) !important;
+}
+
+.login-form .btn-primary {
+    height: 50px;
+}
+
+.back-login a {
+    display: block;
+    margin-top: 11px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.back-login a i {
+    vertical-align: middle;
+}
+
+
+.custome_content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bg-black);
+    margin-bottom: 12px;
+}
+
+.custome_content p {
+    margin: 0;
+    font-size: 15px;
+    color: #888;
+    line-height: 25px;
+}
+
+/* =============================  About  ================================= */
+
+.about-content p {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+    line-height: 25px;
+    margin-bottom: 22px;
+}
+
+/* =============================  pricing  ================================= */
+
+.pricing-sec .pricing-table {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.pricing-sec .pricing-table .table {
+    min-width: 600px;
+}
+
+.pricing-sec .pricing-table tr th {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--bg-black);
+    border: 1px solid #ddd;
+}
+
+.pricing-sec .pricing-table tr td {
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.pickup-form {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+}
+
+.pickup-form .form-control {
+    min-height: calc(1.5em + 1.625rem);
+    display: block;
+    width: 100%;
+    padding: 0.6125rem 1rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #9ca8ea17 !important;
+    background-clip: padding-box;
+    border: 0.0625rem solid rgba(231, 234, 243, .7) !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.3125rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.pickup-form .form-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--bg-black);
+}
+
+.text-danger {
+    color: #e11d48 !important;
+}
+
+.pickup-form .form-control::placeholder {
+    color: #CCC;
+}
+
+.pickup-form .heading h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bg-black);
+    margin: 0;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 9px;
+}
+
+.pickup-form .btn-primary {
+    padding: 12px 50px;
+    font-size: 16px;
+}
+
+.ecom_service_content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--bg-black);
+}
+
+.ecom_service_content p {
+    font-size: 14px;
+    margin: 0;
+    color: #555;
+    line-height: 22px;
+}
+
+.ecommerce_service {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+}
+
+.get_started .btn-primary {
+    padding: 10px 36px;
+}
+
+
+
+.offcanvas-header {
+    padding: 0px 17px;
+}
+
+.btn-close {
+    outline: none !important;
+    box-shadow: none !important;
+    opacity: 1;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+     Helper classes
+     ========================================================================== */
+
+/*
+   * Hide visually and from screen readers
+   */
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+/*
+   * Hide visually and from screen readers, but maintain layout
+   */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+   * Clearfix: contain floats
+   *
+   * The use of `table` rather than `block` is only necessary if using
+   * `::before` to contain the top-margins of child elements.
+   */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+
+@media print {
+
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

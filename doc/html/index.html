@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>DhereyeDelivery</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicons/favicon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ======================= header start  ========================== -->
+    <header class="header-section sticky-top">
+        <div class="container">
+            <!-- desktop menu -->
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand p-0" href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+
+                    <div class="d-flex align-items-center">
+                        <a class="login_btn d-block d-lg-none me-3" href="login.html">
+                            <img src="assets/images/icons/login-user.svg" alt="">
+                            Login
+                        </a>
+                        <button class="navbar-toggler" type="button" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobileNavExample" aria-controls="mobileNavExample">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="track.html">Track</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ecommerce.html">Ecommerce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pick-up-request.html">Pick Up Request</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <a class="login_btn" href="login.html">
+                                <img src="assets/images/icons/login-user.svg" alt="">
+                                Login
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- mobile menu -->
+            <div class="mobile_nav d-block d-lg-none">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNavExample"
+                    aria-labelledby="mobileNavExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileNavExampleLabel">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="track.html">Track</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ecommerce.html">Ecommerce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pick-up-request.html">Pick Up Request</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- ======================= header end  ============================ -->
+
+    <!-- ======================= banner start  ========================== -->
+    <div class="banner-section pt-5 pb-5 mb-5">
+        <div class="container">
+            <div class="banner-content text-center mb-0 mb-lg-5">
+                <h2>On Time. Every Time. Any Time - Trust Us for Your <span>Delivery</span> Needs</h2>
+            </div>
+            <div class="row align-items-center pb-5">
+                <div class="col-lg-6">
+                    <div class="banner_img">
+                        <img src="assets/images/banner.png" class="w-100" alt="image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="delivery_calculate">
+                        <div class="mb-4 text-center text-sm-start">
+                            <h4>Calculate Your Delivery Cost</h4>
+                            <p>
+                                Delivery Cost can be Changed On Special requirements.Please Contact with Authority For
+                                your Special requirements.
+                            </p>
+                        </div>
+
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="pickup_district" class="form-label">Pickup District</label>
+                                        <select name="pickup_district" id="pickup_district" class="form-control"
+                                            required>
+                                            <option value="" class="d-nonde">--Select District--</option>
+                                            <option value="Abdiaziz">Abdiaziz</option>
+                                            <option value="Bondhere">Bondhere</option>
+                                            <option value="Daynile">Daynile</option>
+                                            <option value="Dharkenley">Dharkenley</option>
+                                            <option value="Hamar-Jajab">Hamar-Jajab</option>
+                                            <option value="Hamar-Weyne"> Hamar-Weyne</option>
+                                            <option value="Hodan">Hodan</option>
+                                            <option value="Howl-Wadag">Howl-Wadag</option>
+                                            <option value="Huriwa">Huriwa</option>
+                                            <option value="Kaxda">Kaxda</option>
+                                            <option value="Karan">Karan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="pickup_area" class="form-label">Pickup Area</label>
+                                        <select name="pickup_area" id="pickup_area" class="form-control" required>
+                                            <option value="" class="d-nonde">--Select District--</option>
+                                            <option value="Aadan Yabaa">Aadan Yabaa</option>
+                                            <option value="Hanan nagamous">Hanan nagamous</option>
+                                            <option value="Abaareey">Abaareey</option>
+                                            <option value="Abudwak">Abudwak</option>
+                                            <option value="Adado">Adado</option>
+                                            <option value="Derri">Derri</option>
+                                            <option value="Bargaan">Bargaan</option>
+                                            <option value="Jacar">Jacar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="delivery_district" class="form-label">Delivery District</label>
+                                        <select name="delivery_district" id="delivery_district" class="form-control"
+                                            required>
+                                            <option value="" class="d-nonde">--Delivery District--</option>
+                                            <option value="Abdiaziz">Abdiaziz</option>
+                                            <option value="Bondhere">Bondhere</option>
+                                            <option value="Daynile">Daynile</option>
+                                            <option value="Dharkenley">Dharkenley</option>
+                                            <option value="Hamar-Jajab">Hamar-Jajab</option>
+                                            <option value="Hamar-Weyne"> Hamar-Weyne</option>
+                                            <option value="Hodan">Hodan</option>
+                                            <option value="Howl-Wadag">Howl-Wadag</option>
+                                            <option value="Huriwa">Huriwa</option>
+                                            <option value="Kaxda">Kaxda</option>
+                                            <option value="Karan">Karan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="delivery_area" class="form-label">Delivery Area</label>
+                                        <select name="delivery_area" id="delivery_area" class="form-control" required>
+                                            <option value="" class="d-nonde">--Select Area--</option>
+                                            <option value="Aadan Yabaa">Aadan Yabaa</option>
+                                            <option value="Hanan nagamous">Hanan nagamous</option>
+                                            <option value="Abaareey">Abaareey</option>
+                                            <option value="Abudwak">Abudwak</option>
+                                            <option value="Adado">Adado</option>
+                                            <option value="Derri">Derri</option>
+                                            <option value="Bargaan">Bargaan</option>
+                                            <option value="Jacar">Jacar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="delivery_area" class="form-label">Weight (Kg)</label>
+                                        <select name="delivery_area" id="delivery_area" class="form-control" required>
+                                            <option value="" class="d-nonde">--Select Weight--</option>
+                                            <option value="0- 500 GM">0- 500 GM</option>
+                                            <option value="500GM < 1KG">500GM < 1KG</option>
+                                            <option value="2KG < 5KG">2KG < 5KG</option>
+                                            <option value="5KG < 10KG">5KG < 10KG</option>
+                                            <option value="10KG < 20KG">10KG < 20KG</option>
+                                            <option value="20KG < 25KG">20KG < 25KG</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="delivery_type" class="form-label">Delivery Type</label>
+                                        <select name="delivery_type" id="delivery_type" class="form-control">
+                                            <option value="" class="d-nonde">--Delivery Type--</option>
+                                            <option value="normal delivery">Normal Delivery</option>
+                                            <option value="urgent delivery">Urgent Delivery</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Check</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= banner end  ============================ -->
+
+    <!-- ======================= service start  ========================== -->
+    <div class="service-section mb-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h4>Our <span>Services</span></h4>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-11">
+                    <div class="service-wrapper text-center">
+                        <div class="row g-0">
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap">
+                                    <div class="service-content">
+                                        <i class="icon las la-shipping-fast"></i>
+                                        <h4>Same day courier</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap border-xl-right">
+                                    <div class="service-content">
+                                        <i class="icon las la-star"></i>
+                                        <h4>Priority courier</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap border-right">
+                                    <div class="service-content">
+                                        <i class="icon las la-lock"></i>
+                                        <h4>Priority Secure Courier</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap border-xl-right">
+                                    <div class="service-content">
+                                        <i class="icon las la-truck"></i>
+                                        <h4>Next day delivery</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap">
+                                    <div class="service-content">
+                                        <i class="icon las la-sticky-note"></i>
+                                        <h4>Contract runs</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap border-right border-lg-right">
+                                    <div class="service-content">
+                                        <i class="icon las la-truck"></i>
+                                        <h4>Logistics services</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap border-bottom">
+                                    <div class="service-content">
+                                        <i class="icon las la-cogs"></i>
+                                        <h4>Specialist services</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap border-bottom border-xl-right">
+                                    <div class="service-content">
+                                        <i class="icon las la-shopping-cart"></i>
+                                        <h4>eCommerce Services</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="service-wrap border-right" style="border-bottom: 0 !important;">
+                                    <div class="service-content">
+                                        <i class="icon las la-globe-europe"></i>
+                                        <h4>International courier</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quo quaerat
+                                            fugiat autem voluptates ducimus. Nemo impedit veniam minus unde, error ex
+                                            dolor
+                                            magni dolore at dolorem temporibus ea odio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= service end  ============================= -->
+
+    <!-- ======================= delivery process start  ================== -->
+    <div class="delivery-process mb-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h4>Our <span>Process</span></h4>
+            </div>
+            <div class="process_timeline">
+                <div class="main-timeline">
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <h3 class="title">Book Service (Online / Call / Email)</h3>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates harum qui
+                                eum at recusandae ea. Culpa, iusto veniam dolor earum maxime fugiat fugit iste alias
+                                tenetur quam nam impedit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-truck"></i>
+                            </div>
+                            <h3 class="title">Quick Pick Up and Packing</h3>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates harum qui
+                                eum at recusandae ea. Culpa, iusto veniam dolor earum maxime fugiat fugit iste alias
+                                tenetur quam nam impedit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <h3 class="title">Sorting At Nearest Hub</h3>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates harum qui
+                                eum at recusandae ea. Culpa, iusto veniam dolor earum maxime fugiat fugit iste alias
+                                tenetur quam nam impedit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <h3 class="title">Delivery To Recipient</h3>
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptates harum qui
+                                eum at recusandae ea. Culpa, iusto veniam dolor earum maxime fugiat fugit iste alias
+                                tenetur quam nam impedit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= delivery process end  ========================= -->
+
+    <!-- ======================= footer start  ======================= -->
+    <footer class="footer-section pb-4 pt-4">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xl-4">
+                    <div class="footer-widget mb-4">
+                        <h3>Contact Information</h3>
+                    </div>
+                    <div class="contact_info">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon">
+                                <i class="fa fa-phone-volume"></i>
+                            </div>
+                            <div class="address">
+                                012-56734-8965
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="address">
+                               <strong>Head Office:</strong>
+                                795 Folsom Ave, Suite 600
+                                San Francisco, CA 94107
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="address">
+                                <strong>Email:</strong>
+                                info@dhereyedelivery.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2 ps-xl-5">
+                    <div class="footer-widget mb-4">
+                        <h3>About</h3>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="ecommerce.html">Ecommerce</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="footer-widget mb-4">
+                        <h3>Help & Support</h3>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                            <li><a href="track.html">Tracking</a></li>
+                            <li><a href="pick-up-request.html">Pick Up Request</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-4">
+                    <div class="footer-widget mb-4">
+                        <h3>Get In Touch</h3>
+                    </div>
+                    <div class="social_media">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyright -->
+            <div class="copyright text-center pt-4">
+                <p>Copyright © 2023 DhereyeDelivery | All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ======================= footer end  ========================= -->
+
+
+    <!-- js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
