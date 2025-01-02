@@ -94,7 +94,7 @@ body {
 
 /* color */
 :root {
-    --bg-primary: #a43d0c;
+    --bg-primary: #ff5200;
     --bg-black: #27272A;
     --bg-white: #ffffff;
     --bg-button: #ff5200;
@@ -924,7 +924,7 @@ body {
     opacity: 1;
 }
 
-
+ 
 
 
 

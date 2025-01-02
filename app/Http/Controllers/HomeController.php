@@ -31,16 +31,6 @@ class HomeController extends Controller
     public function index()
     {
 
-        // $deliverymanId = 40;
-
-        // $result = PickupRequest::selectRaw('SUM(CASE WHEN payment_status = 0 THEN cod_amount + amount ELSE cod_amount END) AS total_amount')
-        //     ->where('status', 4)
-        //     ->where('deliveryman_id', $deliverymanId)
-        //     ->where('cod_received_by_admin', 0)
-        //     ->first();
-
-
-
         $region         = Region::orderBy('name', 'asc')->get();
         $weights        = Weight::where('status', true)->orderBy('order_id', 'asc')->get();
         $pricingGroups  = PricingGroup::where('status', true)->orderBy('order_id', 'asc')->get();
